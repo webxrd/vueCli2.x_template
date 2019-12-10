@@ -1,0 +1,112 @@
+/*圆角 @include border-radius*/
+@mixin border-radius($r:5px) {
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+
+/*静态圆角 @extend %border-radius5px*/
+%border-radius5px {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* 盒子阴影 */
+@mixin box-shadow($shadow: 0 0 2px rgba(#000,.25)) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+/*transform转换的mixin*/
+@mixin transform($t) {
+  -webkit-transform: $t;
+  -moz-transform: $t;
+  -ms-transform: $t;
+  -o-transform: $t;
+  transform: $t;
+}
+
+/*透明度*/
+@mixin opacity($o) {
+  -moz-opacity: $o;
+  opacity: $o;
+}
+
+/*透明度0*/
+%opacity0 {
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+/*透明度06*/
+%opacity06 {
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+
+/*透明度1*/
+%opacity1 {
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+/*双透明度隐藏*/
+%opacity0AndHidden {
+  -moz-opacity: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*双透明度显示*/
+%opacity1AndVisible {
+  -moz-opacity: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*过渡mixin*/
+@mixin transition($s: 200ms) {
+  -webkit-transition: $s;
+  -moz-transition: $s;
+  -ms-transition: $s;
+  -o-transition: $s;
+  transition: $s;
+}
+
+/*静态过渡200ms*/
+%transition200ms {
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+}
+
+/*静态过渡300ms*/
+%transition300ms {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+/*静态过渡400ms*/
+%transition400ms {
+  -webkit-transition: 400ms;
+  -moz-transition: 400ms;
+  -ms-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+}
+
+/*静态过渡500ms*/
+%transition500ms {
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
